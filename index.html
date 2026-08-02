@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Owais Yaqoob | Lightweight — Team Khabib, Kashmir</title>
+<meta name="description" content="Official fan site for Owais Yaqoob, Kashmir's first professional MMA fighter, 6-1 pro record, Team Khabib at American Kickboxing Academy, BRAVE Combat Federation lightweight contender.">
+
+<!-- Open Graph / social share preview -->
+<!-- NOTE: replace the aaqibjeelani.github.io base with your real deployed URL before sharing the link -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Owais Yaqoob">
+<meta property="og:title" content="Owais Yaqoob | Lightweight — Team Khabib, Kashmir">
+<meta property="og:description" content="Kashmir's first professional MMA fighter. 6-1 pro record, 6-fight win streak. Trained by Khabib Nurmagomedov at AKA — BRAVE CF lightweight contender calling for the world title.">
+<meta property="og:url" content="https://aaqibjeelani.github.io/owaisyaqoob/">
+<meta property="og:image" content="https://aaqibjeelani.github.io/owaisyaqoob/assets/img/1.jpg">
+<meta property="og:image:alt" content="Owais Yaqoob — MMA fighter, Team Khabib">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Owais Yaqoob | Lightweight — Team Khabib, Kashmir">
+<meta name="twitter:description" content="Kashmir's first professional MMA fighter. 6-1 pro record. Trained by Khabib Nurmagomedov at AKA.">
+<meta name="twitter:image" content="https://aaqibjeelani.github.io/owaisyaqoob/assets/img/1.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/jpeg" href="assets/img/1.jpg">
+<link rel="apple-touch-icon" href="assets/img/1.jpg">
+
+<style>
+  :root{
+    --ink:        #0c0d0b;
+    --ink-2:      #141610;
+    --ink-3:      #1b1d15;
+    --bone:       #f1ebdf;
+    --bone-dim:   #b5afa0;
+    --saffron:    #c89a3c;
+    --saffron-2:  #e8b94f;
+    --oxblood:    #7a2028;
+    --oxblood-2:  #a03038;
+    --slate:      #363a37;
+    --line:       rgba(237,231,218,0.12);
+    --line-soft:  rgba(237,231,218,0.07);
+
+    --display: 'Anton', 'Arial Narrow', sans-serif;
+    --body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+
+    --wrap: 1180px;
+    --ease: cubic-bezier(.22,.61,.36,1);
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{
+    background:var(--ink);
+    color:var(--bone);
+    font-family:var(--body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  ul{ list-style:none; }
+  ::selection{ background:var(--saffron); color:var(--ink); }
+  ::-webkit-scrollbar{ width:11px; }
+  ::-webkit-scrollbar-track{ background:var(--ink); }
+  ::-webkit-scrollbar-thumb{ background:#2b2e25; border-radius:6px; border:2px solid var(--ink); }
+  ::-webkit-scrollbar-thumb:hover{ background:var(--saffron); }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
+  }
+
+  .wrap{ max-width:var(--wrap); margin:0 auto; padding:0 28px; }
+  section{ position:relative; }
+
+  /* ---------- REVEAL ON SCROLL ---------- */
+  .reveal{ opacity:0; transform:translateY(26px); transition:opacity .8s var(--ease), transform .8s var(--ease); }
+  .reveal.in{ opacity:1; transform:none; }
+  .reveal.d1{ transition-delay:.1s; }
+  .reveal.d2{ transition-delay:.2s; }
+  .reveal.d3{ transition-delay:.3s; }
+
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--saffron);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px; height:1px;
+    background:var(--saffron);
+    display:inline-block;
+  }
+
+  /* thread divider — nods to Pulwama saffron stigma threads */
+  .thread-divider{
+    height:34px;
+    width:100%;
+    background-image: repeating-linear-gradient(
+      100deg,
+      transparent 0px, transparent 22px,
+      var(--saffron) 22px, var(--saffron) 24px,
+      transparent 24px, transparent 46px,
+      var(--oxblood) 46px, var(--oxblood) 47px
+    );
+    opacity:0.5;
+    background-size: 260px 100%;
+  }
+
+  /* ---------- GRAIN ---------- */
+  .grain::before{
+    content:"";
+    position:fixed; inset:0; z-index:999; pointer-events:none;
+    opacity:.045;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ---------- NAV ---------- */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    background:rgba(12,13,11,0.72);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+    transition:background .3s, box-shadow .3s;
+  }
+  header.scrolled{ background:rgba(12,13,11,0.92); box-shadow:0 10px 40px rgba(0,0,0,.45); }
+  nav.wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    height:68px;
+  }
+  .brandmark{
+    font-family:var(--display);
+    font-size:20px;
+    letter-spacing:0.04em;
+    display:flex; align-items:center; gap:12px;
+  }
+  .brandmark .logo{
+    width:34px; height:34px; border-radius:50%;
+    overflow:hidden; flex-shrink:0;
+    border:1px solid rgba(200,154,60,.6);
+    box-shadow:0 0 14px rgba(200,154,60,.25);
+    background:var(--ink-3);
+  }
+  .brandmark .logo img{ width:100%; height:100%; object-fit:cover; }
+  .navlinks{ display:flex; gap:30px; align-items:center; }
+  .navlinks a:not(.btn){
+    font-size:13px; letter-spacing:0.05em; text-transform:uppercase;
+    color:var(--bone-dim); font-weight:600;
+    transition:color .2s;
+    position:relative;
+  }
+  .navlinks a:not(.btn)::after{
+    content:""; position:absolute; left:0; bottom:-5px;
+    width:0; height:2px; background:var(--saffron);
+    transition:width .25s var(--ease);
+  }
+  .navlinks a:not(.btn):hover{ color:var(--saffron); }
+  .navlinks a:not(.btn):hover::after{ width:100%; }
+  .navlinks a.btn{
+    color:var(--ink); background:var(--saffron);
+    padding:10px 18px; border-radius:3px; font-weight:700;
+    transition:background .2s, transform .2s;
+    box-shadow:0 4px 18px rgba(200,154,60,.25);
+  }
+  .navlinks a.btn:hover{ background:var(--saffron-2); transform:translateY(-1px); }
+  .navburger{
+    display:none; background:none; border:1px solid var(--line);
+    width:42px; height:42px; border-radius:6px; cursor:pointer;
+    position:relative; z-index:110;
+  }
+  .navburger span{
+    display:block; width:18px; height:2px; background:var(--bone);
+    margin:4px auto; transition:transform .3s var(--ease), opacity .3s;
+  }
+  .navburger.open span:nth-child(1){ transform:translateY(6px) rotate(45deg); }
+  .navburger.open span:nth-child(2){ opacity:0; }
+  .navburger.open span:nth-child(3){ transform:translateY(-6px) rotate(-45deg); }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    min-height:100svh;
+    display:flex; align-items:center;
+    padding-top:130px; padding-bottom:80px;
+    overflow:hidden;
+    position:relative;
+  }
+  .hero-bg{
+    position:absolute; inset:0; z-index:0;
+    background:
+      radial-gradient(ellipse 900px 600px at 82% -10%, rgba(200,154,60,0.14), transparent 60%),
+      radial-gradient(ellipse 600px 400px at -10% 110%, rgba(122,32,40,0.25), transparent 60%);
+  }
+  .hero-bg::after{
+    content:""; position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(237,231,218,0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(237,231,218,0.035) 1px, transparent 1px);
+    background-size:64px 64px;
+    mask-image:radial-gradient(ellipse 900px 600px at 70% 30%, black, transparent 70%);
+    -webkit-mask-image:radial-gradient(ellipse 900px 600px at 70% 30%, black, transparent 70%);
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns: 1.35fr 0.9fr;
+    gap:56px;
+    align-items:center;
+    width:100%;
+    position:relative;
+    z-index:2;
+  }
+  .record-chip{
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--bone);
+    border:1px solid var(--line);
+    padding:6px 12px;
+    border-radius:999px;
+    display:inline-flex; gap:8px; align-items:center;
+    margin-bottom:24px;
+    background:rgba(12,13,11,.4);
+    backdrop-filter:blur(6px);
+  }
+  .record-chip b{ color:var(--saffron); }
+  .record-chip .live{
+    width:6px; height:6px; border-radius:50%; background:#4caf50;
+    box-shadow:0 0 0 0 rgba(76,175,80,.6);
+    animation:pulse 1.8s infinite;
+  }
+  @keyframes pulse{
+    0%{ box-shadow:0 0 0 0 rgba(76,175,80,.55);}
+    70%{ box-shadow:0 0 0 8px rgba(76,175,80,0);}
+    100%{ box-shadow:0 0 0 0 rgba(76,175,80,0);}
+  }
+  h1.name{
+    font-family:var(--display);
+    font-size:clamp(58px, 11vw, 138px);
+    line-height:0.86;
+    letter-spacing:0.01em;
+    text-transform:uppercase;
+    color:var(--bone);
+    text-shadow:0 20px 60px rgba(0,0,0,.5);
+  }
+  h1.name span{ color:var(--saffron); }
+  h1.name .outline{
+    color:transparent;
+    -webkit-text-stroke:2px var(--saffron);
+  }
+  .hero-sub{
+    max-width:46ch;
+    color:var(--bone-dim);
+    font-size:17px;
+    margin-top:24px;
+  }
+  .hero-ctas{ display:flex; gap:14px; margin-top:34px; flex-wrap:wrap; }
+  .btn-primary, .btn-ghost{
+    font-weight:700; font-size:13px; letter-spacing:0.04em; text-transform:uppercase;
+    padding:15px 26px; border-radius:3px; display:inline-flex; align-items:center; gap:9px;
+    transition:all .25s var(--ease);
+    cursor:pointer;
+  }
+  .btn-primary{ background:var(--saffron); color:var(--ink); box-shadow:0 8px 30px rgba(200,154,60,.3); }
+  .btn-primary:hover{ background:var(--saffron-2); transform:translateY(-2px); box-shadow:0 14px 40px rgba(200,154,60,.4); }
+  .btn-ghost{ border:1px solid var(--line); color:var(--bone); background:rgba(12,13,11,.3); backdrop-filter:blur(6px); }
+  .btn-ghost:hover{ border-color:var(--saffron); color:var(--saffron); transform:translateY(-2px); }
+  .btn-primary svg, .btn-ghost svg{ transition:transform .25s var(--ease); }
+  .btn-primary:hover svg, .btn-ghost:hover svg{ transform:translateX(3px); }
+
+  /* hero image */
+  .hero-media{ position:relative; }
+  .hero-frame{
+    position:relative;
+    aspect-ratio: 4/5;
+    overflow:hidden;
+    border:1px solid var(--line);
+    background:
+      linear-gradient(180deg, var(--ink-3), var(--ink-2));
+  }
+  .hero-frame img{
+    width:100%; height:100%; object-fit:cover;
+    filter:grayscale(0.2) contrast(1.05);
+    transition:transform 1.2s var(--ease), filter .6s;
+  }
+  .hero-frame:hover img{ transform:scale(1.05); filter:grayscale(0) contrast(1.05); }
+  .hero-frame::before{
+    content:""; position:absolute; inset:0; z-index:2;
+    background:linear-gradient(180deg, rgba(12,13,11,0) 45%, rgba(12,13,11,.85) 100%);
+  }
+  .frame-arrows{ position:absolute; top:14px; left:14px; z-index:3; display:flex; gap:8px; }
+  .frame-arrows i{ display:block; width:26px; height:26px; border:1px solid var(--saffron); position:relative; opacity:.9; }
+  .frame-arrows i::before, .frame-arrows i::after{
+    content:""; position:absolute; background:var(--saffron);
+  }
+  .frame-arrows i.a::before{ left:8px; top:50%; width:10px; height:1px; transform:translateY(-50%); }
+  .frame-arrows i.a::after{ right:9px; top:50%; width:6px; height:6px; border-top:1px solid var(--saffron); border-right:1px solid var(--saffron); transform:translateY(-50%) rotate(45deg); }
+  .frame-arrows i.b::before{ right:8px; top:50%; width:10px; height:1px; transform:translateY(-50%); }
+  .frame-arrows i.b::after{ left:9px; top:50%; width:6px; height:6px; border-top:1px solid var(--saffron); border-right:1px solid var(--saffron); transform:translateY(-50%) rotate(-135deg); }
+  .hero-img-cap{
+    position:absolute; left:20px; right:20px; bottom:18px; z-index:3;
+    font-family:var(--mono); font-size:11px; letter-spacing:0.08em;
+    text-transform:uppercase; color:var(--bone-dim);
+  }
+  .hero-img-cap b{ color:var(--saffron); }
+
+  .hero-stat-card{
+    position:absolute;
+    left:-40px; bottom:-34px;
+    border:1px solid var(--line);
+    padding:22px 26px;
+    background:rgba(18,20,16,.92);
+    backdrop-filter:blur(10px);
+    box-shadow:0 24px 60px rgba(0,0,0,.5);
+    z-index:4;
+    max-width:300px;
+  }
+  .hero-stat-card .cap{
+    font-family:var(--mono); font-size:11px; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--bone-dim); margin-bottom:6px;
+  }
+  .hero-stat-card .big{
+    font-family:var(--display); font-size:52px; color:var(--saffron); line-height:1;
+  }
+  .hero-stat-row{
+    display:grid; grid-template-columns:1fr 1fr; gap:14px;
+    margin-top:16px; padding-top:16px; border-top:1px solid var(--line);
+  }
+  .hero-stat-row div b{ display:block; font-family:var(--mono); font-size:17px; color:var(--bone); }
+  .hero-stat-row div span{ font-size:10px; color:var(--bone-dim); letter-spacing:0.06em; text-transform:uppercase; }
+
+  .hero-scroll{
+    position:absolute; bottom:26px; left:50%; transform:translateX(-50%);
+    z-index:3; display:flex; flex-direction:column; align-items:center; gap:8px;
+    font-family:var(--mono); font-size:10px; letter-spacing:0.25em;
+    text-transform:uppercase; color:var(--bone-dim);
+  }
+  .hero-scroll::after{
+    content:""; width:1px; height:40px; background:linear-gradient(180deg,var(--saffron),transparent);
+    animation:drip 2s infinite;
+  }
+  @keyframes drip{ 0%{ transform:scaleY(0); transform-origin:top;} 50%{ transform:scaleY(1); transform-origin:top;} 51%{ transform-origin:bottom;} 100%{ transform:scaleY(0); transform-origin:bottom;} }
+
+  /* ---------- TICKER ---------- */
+  .ticker-wrap{
+    background:linear-gradient(90deg, var(--oxblood), #5c1a20);
+    overflow:hidden;
+    border-bottom:1px solid var(--line);
+    padding:13px 0;
+  }
+  .ticker-track{
+    display:flex; gap:48px; white-space:nowrap;
+    width:max-content;
+    animation:scroll 28s linear infinite;
+  }
+  @keyframes scroll{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+  .ticker-track span{
+    font-family:var(--mono);
+    font-size:13px; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--bone);
+    display:flex; align-items:center; gap:12px;
+  }
+  .ticker-track span::before{ content:"◆"; color:var(--saffron); font-size:9px; }
+
+  /* ---------- SECTION generic ---------- */
+  .section{ padding:120px 0; }
+  .section-head{ max-width:680px; margin-bottom:60px; }
+  .section-title{
+    font-family:var(--display);
+    font-size:clamp(34px,4.6vw,54px);
+    text-transform:uppercase;
+    line-height:1.02;
+    margin-top:14px;
+  }
+  .section-title em{ font-style:normal; color:var(--saffron); }
+
+  /* ---------- STORY ---------- */
+  .story-grid{
+    display:grid; grid-template-columns: 1.05fr 0.95fr; gap:64px;
+    align-items:start;
+  }
+  .story-copy p{ color:var(--bone-dim); font-size:16px; margin-bottom:18px; max-width:60ch; }
+  .story-copy strong{ color:var(--bone); }
+  blockquote.khabib{
+    border-left:2px solid var(--saffron);
+    padding:6px 0 6px 22px;
+    margin:30px 0;
+    font-size:17px;
+    color:var(--bone);
+    font-style:italic;
+  }
+  blockquote.khabib cite{
+    display:block; margin-top:10px; font-style:normal;
+    font-family:var(--mono); font-size:12px; letter-spacing:0.05em;
+    color:var(--bone-dim); text-transform:uppercase;
+  }
+
+  .ritual-card{
+    border:1px solid var(--line);
+    background:rgba(237,231,218,0.03);
+    padding:32px;
+    backdrop-filter:blur(4px);
+  }
+  .ritual-card h3{
+    font-family:var(--display); text-transform:uppercase; font-size:21px;
+    letter-spacing:0.02em; margin-bottom:6px;
+  }
+  .ritual-card > p{ color:var(--bone-dim); font-size:14px; margin-bottom:22px; }
+  .ritual-list li{
+    display:grid; grid-template-columns:34px 1fr; gap:14px;
+    padding:17px 0; border-top:1px solid var(--line);
+    transition:background .3s, padding-left .3s;
+  }
+  .ritual-list li:first-child{ border-top:none; }
+  .ritual-list li:hover{ background:rgba(200,154,60,0.05); padding-left:8px; }
+  .ritual-list .mk{
+    font-family:var(--mono); color:var(--saffron); font-size:13px; padding-top:2px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .ritual-list .mk::after{ content:""; width:14px; height:1px; background:var(--line); }
+  .ritual-list b{ display:block; font-size:14px; color:var(--bone); margin-bottom:3px; }
+  .ritual-list span{ font-size:13px; color:var(--bone-dim); }
+
+  /* story collage */
+  .story-media{ display:flex; flex-direction:column; gap:22px; position:sticky; top:100px; }
+  .sm-card{ position:relative; overflow:hidden; border:1px solid var(--line); }
+  .sm-card img{ width:100%; height:100%; object-fit:cover; filter:grayscale(.15); transition:transform 1s var(--ease); }
+  .sm-card:hover img{ transform:scale(1.05); }
+  .sm-card.tall{ aspect-ratio:4/3; }
+  .sm-card.short{ aspect-ratio:5/3; }
+  .sm-card::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(180deg, transparent 60%, rgba(12,13,11,.7));
+  }
+  .sm-card .tag{
+    position:absolute; left:16px; bottom:14px; z-index:2;
+    font-family:var(--mono); font-size:11px; letter-spacing:0.08em;
+    text-transform:uppercase; color:var(--saffron);
+  }
+  .sm-float{
+    position:absolute; z-index:3; right:-18px; top:-18px;
+    background:var(--saffron); color:var(--ink);
+    font-family:var(--display); font-size:14px; letter-spacing:0.05em;
+    padding:8px 14px; text-transform:uppercase;
+    box-shadow:0 10px 30px rgba(200,154,60,.35);
+    transform:rotate(3deg);
+  }
+
+  /* ---------- RECORD ---------- */
+  .record-table{ border-top:1px solid var(--line); }
+  .rt-row{
+    display:grid;
+    grid-template-columns: 70px 90px 1.4fr 1fr 130px 110px;
+    gap:16px;
+    align-items:center;
+    padding:20px 0;
+    border-bottom:1px solid var(--line);
+    transition:background .3s, padding-left .3s;
+    position:relative;
+  }
+  .rt-row:hover{ background:rgba(200,154,60,0.04); padding-left:14px; }
+  .rt-row.head{
+    font-family:var(--mono); font-size:11px; text-transform:uppercase;
+    letter-spacing:0.08em; color:var(--bone-dim); padding-bottom:14px;
+  }
+  .rt-row.head:hover{ background:none; padding-left:0; }
+  .rt-row .res{
+    font-family:var(--mono); font-weight:700; font-size:13px;
+    width:34px; height:34px; display:flex; align-items:center; justify-content:center;
+    border-radius:3px;
+  }
+  .rt-row .res.win{ background:rgba(200,154,60,0.15); color:var(--saffron); border:1px solid var(--saffron); box-shadow:0 0 14px rgba(200,154,60,.15); }
+  .rt-row .res.loss{ background:rgba(122,32,40,0.25); color:#e08a8a; border:1px solid var(--oxblood); }
+  .rt-row .rec{ font-family:var(--mono); color:var(--bone-dim); font-size:13px; }
+  .rt-row .opp{ font-weight:700; font-size:15px; }
+  .rt-row .opp small{ display:block; font-weight:400; color:var(--bone-dim); font-size:12px; margin-top:2px; font-family:var(--body); }
+  .rt-row .method{ font-size:13px; color:var(--bone-dim); }
+  .rt-row .method b{ color:var(--saffron-2); font-weight:600; }
+  .rt-row .event{ font-size:13px; color:var(--bone-dim); }
+  .rt-row .date{ font-family:var(--mono); font-size:12px; color:var(--bone-dim); text-align:right; }
+  .rt-row.latest{ background:linear-gradient(90deg, rgba(200,154,60,0.08), transparent 60%); }
+  .rt-row.latest:hover{ background:linear-gradient(90deg, rgba(200,154,60,0.12), transparent 60%); }
+  .rt-row.latest .opp, .rt-row.latest .res.win{ color:var(--saffron-2); }
+  .rt-row.latest::before{
+    content:"LATEST"; position:absolute; top:-9px; right:0;
+    font-family:var(--mono); font-size:9px; letter-spacing:0.12em;
+    color:var(--ink); background:var(--saffron); padding:2px 8px;
+  }
+
+  .callout-title{
+    display:inline-block;
+    font-family:var(--mono); font-size:11px; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--ink);
+    background:var(--saffron); padding:4px 9px; margin-bottom:12px;
+  }
+  .next-up{
+    margin-top:44px;
+    border:1px solid var(--line);
+    background:
+      radial-gradient(ellipse 500px 200px at 10% 0%, rgba(200,154,60,0.08), transparent 60%),
+      rgba(237,231,218,0.02);
+    padding:30px 34px;
+  }
+  .next-up p{ max-width:60ch; color:var(--bone-dim); font-size:15px; }
+  .next-up p strong{ color:var(--bone); }
+
+  /* ---------- INSTAGRAM ---------- */
+  .ig-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:20px;
+  }
+  .ig-tile{
+    position:relative;
+    min-height:480px;
+    border:1px solid var(--line);
+    background:
+      linear-gradient(180deg, rgba(12,13,11,0) 0%, rgba(237,231,218,0.03) 100%),
+      linear-gradient(135deg, #262822 0%, #14150f 100%);
+    overflow:hidden;
+    display:flex; align-items:center; justify-content:center;
+    padding:10px;
+    transition:transform .3s var(--ease), border-color .3s;
+  }
+  .ig-tile:hover{ transform:translateY(-4px); border-color:var(--saffron); box-shadow:0 20px 50px rgba(0,0,0,.5); }
+  .ig-tile .ig-loading{
+    position:absolute; inset:0; z-index:1;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;
+    font-family:var(--mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase;
+    color:var(--bone-dim); text-align:center; padding:20px;
+  }
+  .ig-tile .ig-loading::before{
+    content:""; width:26px; height:26px; border-radius:50%;
+    border:2px solid var(--line); border-top-color:var(--saffron);
+    animation:igspin 1s linear infinite;
+  }
+  @keyframes igspin{ to{ transform:rotate(360deg); } }
+  .ig-tile .instagram-media{
+    position:relative; z-index:2;
+    margin:0 auto !important; min-width:100% !important;
+  }
+
+  /* ---------- ACADEMY ---------- */
+  .academy{
+    background:var(--ink-2);
+    border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    overflow:hidden;
+  }
+  .academy-grid{
+    display:grid; grid-template-columns: 1.1fr 0.9fr; gap:64px; align-items:center;
+  }
+  .academy-media{ position:relative; }
+  .academy-media .frame{
+    aspect-ratio:4/5; overflow:hidden; border:1px solid var(--line);
+    position:relative;
+  }
+  .academy-media img{ width:100%; height:100%; object-fit:cover; filter:grayscale(.12); transition:transform 1s var(--ease); }
+  .academy-media:hover img{ transform:scale(1.05); }
+  .academy-media::before{
+    content:""; position:absolute; inset:-18px; border:1px solid rgba(200,154,60,0.35);
+    transform:translate(18px,18px); pointer-events:none; z-index:1;
+  }
+  .stat-trio{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:38px; }
+  .stat-trio div{
+    border-left:2px solid var(--saffron); padding-left:16px;
+  }
+  .stat-trio div b{ font-family:var(--display); font-size:42px; color:var(--saffron); display:block; line-height:1.1; }
+  .stat-trio div span{ font-size:12px; color:var(--bone-dim); text-transform:uppercase; letter-spacing:0.05em; }
+
+  /* ---------- GALLERY ---------- */
+  .gallery{ background:var(--ink-2); border-top:1px solid var(--line); }
+  .gallery-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:18px;
+  }
+  .g-item{
+    position:relative; overflow:hidden; aspect-ratio:4/5; border:1px solid var(--line);
+    cursor:pointer;
+  }
+  .g-item.wide{ aspect-ratio:16/9; grid-column:span 2; }
+  .g-item img{ width:100%; height:100%; object-fit:cover; filter:grayscale(.2); transition:transform .8s var(--ease), filter .5s; }
+  .g-item:hover img{ transform:scale(1.08); filter:grayscale(0); }
+  .g-item::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(180deg, transparent 55%, rgba(12,13,11,.8));
+    opacity:.6; transition:opacity .4s;
+  }
+  .g-item:hover::after{ opacity:1; }
+  .g-item .cap{
+    position:absolute; left:18px; bottom:16px; z-index:2;
+    font-size:14px; font-weight:700; color:var(--bone);
+    transform:translateY(8px); opacity:0; transition:transform .4s var(--ease), opacity .4s;
+  }
+  .g-item:hover .cap{ transform:none; opacity:1; }
+  .g-item .glyph{
+    position:absolute; right:18px; bottom:16px; z-index:2;
+    width:10px; height:10px; border-top:2px solid var(--saffron); border-right:2px solid var(--saffron);
+    transform:rotate(45deg); opacity:0; transition:opacity .4s;
+  }
+  .g-item:hover .glyph{ opacity:1; }
+
+  /* ---------- PRESS ---------- */
+  .press-row{ display:flex; flex-wrap:wrap; gap:14px; margin-top:20px; }
+  .press-pill{
+    font-family:var(--mono); font-size:12px; padding:10px 16px;
+    border:1px solid var(--line); color:var(--bone-dim);
+    transition:color .2s, border-color .2s, transform .2s;
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .press-pill:hover{ color:var(--saffron); border-color:var(--saffron); transform:translateY(-2px); }
+  .press-pill::before{ content:"↗"; font-size:11px; color:var(--saffron); opacity:.6; }
+
+  /* ---------- CTA ---------- */
+  .cta{
+    padding:130px 0;
+    text-align:center;
+    background:
+      radial-gradient(ellipse 700px 300px at 50% 0%, rgba(200,154,60,0.12), transparent 60%),
+      linear-gradient(180deg, var(--ink), var(--ink-2));
+    border-top:1px solid var(--line);
+  }
+  .cta h2{
+    font-family:var(--display); font-size:clamp(40px,6vw,72px);
+    text-transform:uppercase; line-height:1;
+    margin-bottom:22px;
+  }
+  .cta h2 span{ color:var(--saffron); }
+  .cta p{ color:var(--bone-dim); max-width:52ch; margin:0 auto 36px; font-size:16px; }
+  .cta .hero-ctas{ justify-content:center; }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    padding:76px 0 0;
+    background:#0a0b09;
+    border-top:1px solid var(--line);
+    position:relative;
+  }
+  .footer-top{ display:flex; justify-content:space-between; gap:40px; flex-wrap:wrap; padding-bottom:50px; border-bottom:1px solid var(--line); }
+  .foot-brand{ max-width:320px; }
+  .foot-name{ font-family:var(--display); font-size:28px; text-transform:uppercase; margin-bottom:12px; }
+  footer p{ color:var(--bone-dim); font-size:14px; line-height:1.7; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:60px; padding-bottom:50px; border-bottom:1px solid var(--line); }
+  footer h4{
+    font-family:var(--mono); font-size:12px; text-transform:uppercase;
+    letter-spacing:0.08em; color:var(--saffron); margin-bottom:18px;
+    display:flex; align-items:center; gap:10px;
+  }
+  footer h4::after{ content:""; width:24px; height:1px; background:var(--line); }
+  footer ul{ display:flex; flex-direction:column; gap:12px; }
+  footer ul a{ color:var(--bone-dim); font-size:14px; transition:color .2s, padding-left .2s; display:inline-flex; align-items:center; gap:8px; }
+  footer ul a::before{ content:"→"; color:var(--saffron); font-size:11px; opacity:0; transition:opacity .2s; }
+  footer ul a:hover{ color:var(--saffron); padding-left:6px; }
+  footer ul a:hover::before{ opacity:1; }
+
+  .foot-bottom{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:28px 0 26px; font-size:12.5px; color:var(--bone-dim); flex-wrap:wrap; gap:14px;
+  }
+  .foot-bottom .madeby{ display:flex; align-items:center; gap:10px; font-size:12.5px; }
+  .foot-bottom .madeby a{ color:var(--bone); font-weight:600; transition:color .2s; }
+  .foot-bottom .madeby a:hover{ color:var(--saffron); }
+  .madeby-logo{
+    width:26px; height:26px; border-radius:50%; overflow:hidden;
+    border:1px solid var(--line); display:flex; align-items:center; justify-content:center;
+    background:#10120e;
+  }
+  .madeby-logo img{ width:100%; height:100%; object-fit:contain; }
+  .foot-meta{ display:flex; gap:18px; flex-wrap:wrap; }
+
+  /* back to top */
+  .to-top{
+    position:fixed; right:24px; bottom:24px; z-index:90;
+    width:46px; height:46px; border-radius:50%;
+    background:var(--saffron); color:var(--ink);
+    border:none; cursor:pointer; font-size:18px;
+    display:flex; align-items:center; justify-content:center;
+    opacity:0; transform:translateY(20px); pointer-events:none;
+    transition:opacity .3s, transform .3s, background .2s;
+    box-shadow:0 10px 30px rgba(200,154,60,.3);
+  }
+  .to-top.show{ opacity:1; transform:none; pointer-events:auto; }
+  .to-top:hover{ background:var(--saffron-2); }
+  .to-top svg{ width:16px; height:16px; }
+
+  /* ---------- AUDIO CONTROL ---------- */
+  .audio-control{
+    position:fixed; left:24px; bottom:24px; z-index:90;
+    display:flex; align-items:center; gap:12px;
+    background:rgba(12,13,11,.85); backdrop-filter:blur(10px);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:8px 16px 8px 8px;
+    cursor:pointer;
+    transition:border-color .2s, transform .2s, box-shadow .2s;
+  }
+  .audio-control:hover{ border-color:var(--saffron); transform:translateY(-2px); box-shadow:0 12px 30px rgba(0,0,0,.4); }
+  .audio-icon{
+    width:36px; height:36px; border-radius:50%;
+    background:var(--saffron); color:var(--ink);
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+    transition:background .2s;
+  }
+  .audio-control:hover .audio-icon{ background:var(--saffron-2); }
+  .audio-icon svg{ width:16px; height:16px; }
+  .audio-label{
+    font-family:var(--mono); font-size:10px; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--bone-dim); line-height:1.35; white-space:nowrap;
+  }
+  .audio-label b{ display:block; color:var(--bone); font-weight:600; letter-spacing:0; text-transform:none; font-size:12px; }
+  .audio-eq{ display:flex; align-items:flex-end; gap:2.5px; height:14px; flex-shrink:0; opacity:0; transition:opacity .3s; }
+  .audio-eq i{
+    width:3px; background:var(--saffron); border-radius:2px;
+    animation:eq 1s ease-in-out infinite;
+    animation-play-state:paused;
+  }
+  .audio-eq i:nth-child(1){ height:5px; }
+  .audio-eq i:nth-child(2){ height:14px; animation-delay:.15s; }
+  .audio-eq i:nth-child(3){ height:8px; animation-delay:.3s; }
+  .audio-eq i:nth-child(4){ height:11px; animation-delay:.45s; }
+  @keyframes eq{ 0%,100%{ transform:scaleY(.35);} 50%{ transform:scaleY(1);} }
+  .audio-control.playing .audio-eq{ opacity:1; }
+  .audio-control.playing .audio-eq i{ animation-play-state:running; }
+  @media (max-width:720px){
+    .audio-label{ display:none; }
+    .audio-control{ padding:8px; gap:0; }
+    .audio-eq{ display:none; }
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:980px){
+    .hero-grid{ grid-template-columns:1fr; gap:64px; }
+    .hero-media{ max-width:440px; margin:0 auto; }
+    .hero-stat-card{ left:12px; bottom:-26px; }
+    .story-grid{ grid-template-columns:1fr; }
+    .story-media{ position:static; flex-direction:row; }
+    .sm-card.tall, .sm-card.short{ aspect-ratio:4/3; flex:1; }
+    .academy-grid{ grid-template-columns:1fr; }
+    .academy-media{ max-width:420px; }
+    .academy-grid .academy-media{ order:-1; }
+    .footer-grid{ grid-template-columns:1fr; gap:34px; }
+  }
+  @media (max-width:900px){
+    .ig-grid{ grid-template-columns:repeat(2,1fr); }
+    .rt-row{ grid-template-columns: 50px 1fr; row-gap:6px; }
+    .rt-row .rec, .rt-row .method, .rt-row .event, .rt-row .date{ grid-column:2; }
+    .rt-row.head{ display:none; }
+    .gallery-grid{ grid-template-columns:1fr 1fr; }
+    .g-item.wide{ grid-column:span 2; }
+  }
+  @media (max-width:720px){
+    .navburger{ display:block; }
+    .navlinks{
+      position:fixed; top:0; right:0; height:100vh; width:min(320px, 82vw);
+      background:rgba(12,13,11,.97); backdrop-filter:blur(16px);
+      flex-direction:column; justify-content:center; gap:26px;
+      transform:translateX(100%); transition:transform .4s var(--ease);
+      border-left:1px solid var(--line); z-index:105;
+    }
+    .navlinks.open{ transform:none; }
+    .navlinks a{ font-size:16px; }
+    .section{ padding:84px 0; }
+    .stat-trio{ grid-template-columns:1fr; gap:16px; }
+    .hero{ padding-top:110px; }
+    .hero-scroll{ display:none; }
+    .story-media{ flex-direction:column; }
+    .ig-grid{ grid-template-columns:1fr; }
+    .ig-tile{ min-height:440px; }
+    .foot-bottom{ justify-content:center; text-align:center; }
+  }
+</style>
+</head>
+<body class="grain">
+
+<header id="topbar">
+  <nav class="wrap">
+    <a href="#top" class="brandmark"><span class="logo"><img src="assets/img/1.jpg" alt="Owais Yaqoob logo"></span>OWAIS YAQOOB</a>
+    <div class="navlinks" id="navlinks">
+      <a href="#story">Story</a>
+      <a href="#record">Record</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#academy">Academy</a>
+      <a href="https://www.instagram.com/owais_yaqoob_/" target="_blank" rel="noopener" class="btn">Follow</a>
+    </div>
+    <button class="navburger" id="navburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <div class="record-chip reveal"><span class="live"></span> 6&#8209;FIGHT WIN STREAK &nbsp;·&nbsp; <b>6&#8211;1 PRO</b> &nbsp;·&nbsp; #5 BRAVE CF LIGHTWEIGHT</div>
+        <h1 class="name reveal d1">OWAIS<br><span>YAQOOB</span></h1>
+        <p class="hero-sub reveal d2">Kashmir's first professional MMA fighter. Trained by Khabib Nurmagomedov and Javier Mendez at the American Kickboxing Academy. Six straight wins deep into the BRAVE CF lightweight division &mdash; and calling for a shot at the world title.</p>
+        <div class="hero-ctas reveal d3">
+          <a href="#instagram" class="btn-primary">Latest posts
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://www.instagram.com/owais_yaqoob_/" target="_blank" rel="noopener" class="btn-ghost">@owais_yaqoob_ on Instagram
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-media reveal d2">
+        <div class="hero-frame">
+          <img src="assets/img/1.jpg" alt="Owais Yaqoob, Team Khabib lightweight at BRAVE CF">
+          <div class="frame-arrows"><i class="a"></i><i class="b"></i></div>
+          <div class="hero-img-cap">TEAM KHABIB &nbsp;/&nbsp; AKA &nbsp;/&nbsp; <b>BRAVE CF</b></div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="cap">Latest result &mdash; Aug 1, 2026</div>
+          <div class="big">TKO · R1</div>
+          <div class="cap">def. Delyan Georgiev (3&#8211;0) &middot; BRAVE CF 107 &middot; Burgas</div>
+          <div class="hero-stat-row">
+            <div><b>6&#8211;1</b><span>Pro record</span></div>
+            <div><b>4</b><span>Finishes</span></div>
+            <div><b>2015</b><span>Lion's Den founded</span></div>
+            <div><b>Pulwama</b><span>Fighting out of</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <!-- ============ TICKER ============ -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>6&#8211;1 PROFESSIONAL RECORD</span>
+      <span>6 STRAIGHT WINS</span>
+      <span>TEAM KHABIB · AKA</span>
+      <span>FIRST PRO FIGHTER FROM J&amp;K</span>
+      <span>BRAVE CF LIGHTWEIGHT DIVISION</span>
+      <span>CALLING FOR THE WORLD TITLE</span>
+      <span>6&#8211;1 PROFESSIONAL RECORD</span>
+      <span>6 STRAIGHT WINS</span>
+      <span>TEAM KHABIB · AKA</span>
+      <span>FIRST PRO FIGHTER FROM J&amp;K</span>
+      <span>BRAVE CF LIGHTWEIGHT DIVISION</span>
+      <span>CALLING FOR THE WORLD TITLE</span>
+    </div>
+  </div>
+
+  <!-- ============ STORY ============ -->
+  <section class="section" id="story">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">The story</div>
+        <h1 class="section-title">From Pulwama's <em>saffron fields</em><br>to the Octagon</h1>
+      </div>
+      <div class="story-grid">
+        <div class="story-copy reveal">
+          <p>Owais Yaqoob was born in 1998 in <strong>Murran, a village in Pulwama district</strong> &mdash; the heart of India's saffron country, in south Kashmir. He started training in taekwondo at 15 and spent the next decade collecting <strong>11 gold and 6 silver medals</strong> on the national circuit, before turning to mixed martial arts and winning three national amateur titles.</p>
+          <p>To build a fighter capable of competing internationally, he left home to train wherever the best coaches were: <strong>wrestling and grappling in Chandigarh</strong>, striking at Sumo Fight Club in <strong>Bali</strong>, and two months at the Abdulmanap Nurmagomedov School in <strong>Dagestan</strong> under Islam Makhachev. That road eventually led him to the <strong>American Kickboxing Academy</strong> in California, where he now trains full-time under Javier Mendez and Khabib Nurmagomedov as part of Team Khabib.</p>
+          <blockquote class="khabib">"Alhamdulillah! Thank you Bulgaria for not supporting me &mdash; one day you will love me."
+            <cite>Owais Yaqoob, after knocking out Delyan Georgiev at BRAVE CF 107, Aug 1 2026</cite>
+          </blockquote>
+          <p>In October 2025, Khabib himself publicly praised Owais's progress in the gym &mdash; a rare endorsement for a fighter still building his record. Since his BRAVE CF debut in September 2025, Owais has gone <strong>3&#8211;0 inside the promotion</strong>, finishing all three opponents, and has become the first fighter from Jammu &amp; Kashmir to win inside BRAVE CF.</p>
+        </div>
+        <div class="story-media reveal d2">
+          <div class="sm-card tall">
+            <img src="assets/img/2.jpg" alt="Owais Yaqoob training">
+            <div class="tag">Inside camp — AKA</div>
+          </div>
+          <div class="sm-card short">
+            <img src="assets/img/3.jpg" alt="Owais Yaqoob — The walkout">
+            <div class="tag">The walkout</div>
+            <div class="sm-float">Kashmir → Cage</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ritual-card reveal" style="margin-top:72px;">
+        <div style="display:grid; grid-template-columns:1fr 2fr; gap:48px;" class="ritual-wrap">
+          <div>
+            <h3>The walkout</h3>
+            <p>Every entrance carries home with him into the cage.</p>
+          </div>
+          <ul class="ritual-list">
+            <li><span class="mk">01</span><div><b>Karakuli cap</b><span>The traditional Kashmiri hat, worn on the walk to the cage.</span></div></li>
+            <li><span class="mk">02</span><div><b>Black pashmina shawl</b><span>Kashmir's signature wool, draped over the shoulders before every fight.</span></div></li>
+            <li><span class="mk">03</span><div><b>The tricolour</b><span>He carries the Indian flag into the arena, representing J&amp;K on the world stage.</span></div></li>
+            <li><span class="mk">04</span><div><b>Lion's Den corner</b><span>Cornered by the academy he built back home in Pulwama.</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="thread-divider"></div></div>
+
+  <!-- ============ RECORD ============ -->
+  <section class="section" id="record">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Professional record</div>
+        <h1 class="section-title">6 wins. 1 loss.<br>4 finishes.</h1>
+      </div>
+
+      <div class="record-table reveal">
+        <div class="rt-row head">
+          <div>Res.</div><div>Record</div><div>Opponent</div><div>Method</div><div>Event</div><div style="text-align:right">Date</div>
+        </div>
+
+        <div class="rt-row latest">
+          <div class="res win">W</div>
+          <div class="rec">6&#8211;1</div>
+          <div class="opp">Delyan Georgiev<small>Undefeated coming in · handed him his first pro loss</small></div>
+          <div class="method"><b>TKO</b> (punches), R1 4:00</div>
+          <div class="event">BRAVE CF 107 &middot; Burgas, Bulgaria</div>
+          <div class="date">Aug 1, 2026</div>
+        </div>
+
+        <div class="rt-row">
+          <div class="res win">W</div>
+          <div class="rec">5&#8211;1</div>
+          <div class="opp">Mehmet Can Tasdoven</div>
+          <div class="method"><b>TKO</b> (knee &amp; punches), R1 1:25</div>
+          <div class="event">BRAVE CF 103</div>
+          <div class="date">Dec 21, 2025</div>
+        </div>
+
+        <div class="rt-row">
+          <div class="res win">W</div>
+          <div class="rec">4&#8211;1</div>
+          <div class="opp">Ian Paul Lora<small>BRAVE CF debut</small></div>
+          <div class="method"><b>TKO</b> (punches), R1 1:54</div>
+          <div class="event">BRAVE CF 98 &middot; Zhengzhou, China</div>
+          <div class="date">Sep 19, 2025</div>
+        </div>
+
+        <div class="rt-row">
+          <div class="res win">W</div>
+          <div class="rec">3&#8211;1</div>
+          <div class="opp">Shetty Pratik Sadashiv</div>
+          <div class="method"><b>TKO</b> (punches), R2 1:45</div>
+          <div class="event">Veswa Fight Championship 4 &middot; Panchkula</div>
+          <div class="date">Apr 19, 2025</div>
+        </div>
+
+        <div class="rt-row">
+          <div class="res win">W</div>
+          <div class="rec">2&#8211;1</div>
+          <div class="opp">Amanzhol Khaisa</div>
+          <div class="method">Decision (unanimous), R3</div>
+          <div class="event">Naiza FC 70 &middot; Semey, Kazakhstan</div>
+          <div class="date">Dec 21, 2024</div>
+        </div>
+
+        <div class="rt-row">
+          <div class="res win">W</div>
+          <div class="rec">1&#8211;1</div>
+          <div class="opp">Azim Mokhlis</div>
+          <div class="method">Decision (unanimous), R3</div>
+          <div class="event">Matrix Fight Night 14 &middot; UAE</div>
+          <div class="date">Mar 9, 2024</div>
+        </div>
+
+        <div class="rt-row">
+          <div class="res loss">L</div>
+          <div class="rec">0&#8211;1</div>
+          <div class="opp">Neeraj Panghal<small>Professional debut</small></div>
+          <div class="method">Submission (guillotine), R3 1:24</div>
+          <div class="event">Matrix Fight Night 11 &middot; New Delhi</div>
+          <div class="date">Mar 31, 2023</div>
+        </div>
+      </div>
+
+      <div class="next-up reveal">
+        <span class="callout-title">Next up</span>
+        <p>Fresh off the biggest win of his career, Owais has publicly called out reigning BRAVE CF Lightweight World Champion <strong>Abdisalam "Omok" Uulu Kubanychbek</strong>. No date has been announced &mdash; but the résumé for a title shot is there.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="thread-divider"></div></div>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery" id="gallery">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">The gallery</div>
+        <h1 class="section-title">Inside the <em>journey</em></h1>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="g-item wide">
+          <img src="assets/img/1.jpg" alt="Owais Yaqoob fight night">
+          <div class="cap">Fight night — the cage calls</div>
+          <div class="glyph"></div>
+        </div>
+        <div class="g-item">
+          <img src="assets/img/2.jpg" alt="Training at AKA">
+          <div class="cap">Training at AKA</div>
+          <div class="glyph"></div>
+        </div>
+        <div class="g-item">
+          <img src="assets/img/3.jpg" alt="The walkout ritual">
+          <div class="cap">The walkout</div>
+          <div class="glyph"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSTAGRAM ============ -->
+  <section class="section" id="instagram">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Inside camp</div>
+        <h1 class="section-title">Latest from <em>@owais_yaqoob_</em></h1>
+      </div>
+
+      <div class="ig-note reveal" style="margin-bottom:26px; padding:16px 18px; border:1px dashed var(--line); font-family:var(--mono); font-size:12.5px; color:var(--bone-dim); line-height:1.7;">
+        Live Instagram posts — loaded with Instagram's official embed. If any tile stays as a spinner, that post link may have been removed; swap the URLs in the <code style="color:var(--saffron)">IG_POSTS</code> list at the bottom of this file.
+      </div>
+
+      <div class="ig-grid reveal" id="ig-grid"></div>
+
+      <div class="reels-note" style="margin-top:30px; padding:18px 22px; border:1px solid var(--line); background:rgba(237,231,218,0.02);">
+        <a href="https://www.instagram.com/owais_yaqoob_/" target="_blank" rel="noopener" class="btn-primary" style="padding:12px 20px;">Follow @owais_yaqoob_
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACADEMY ============ -->
+  <section class="section academy" id="academy">
+    <div class="wrap academy-grid">
+      <div class="academy-media reveal">
+        <div class="frame">
+          <img src="assets/img/2.jpg" alt="Lion's Den Martial Arts Academy, Pulwama">
+        </div>
+      </div>
+      <div class="reveal d2">
+        <div class="eyebrow">Giving back</div>
+        <h1 class="section-title">Lion's Den<br>Martial Arts Academy</h1>
+        <p style="color:var(--bone-dim); font-size:16px; max-width:56ch; margin-top:22px;">Founded by Owais in <strong style="color:var(--bone)">Pulwama in 2015</strong>, before he ever turned professional. The academy has trained more than <strong style="color:var(--bone)">200 young athletes</strong> from the valley, several of whom have gone on to represent Jammu &amp; Kashmir at the national level and win medals of their own.</p>
+        <div class="stat-trio">
+          <div><b>2015</b><span>Founded</span></div>
+          <div><b>200+</b><span>Students trained</span></div>
+          <div><b>Multiple</b><span>National medalists</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRESS ============ -->
+  <section class="section" id="press">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">In the news</div>
+        <h1 class="section-title">Making history<br>for J&amp;K</h1>
+      </div>
+      <p style="max-width:60ch; color:var(--bone-dim); font-size:15px;" class="reveal">Owais is a brand ambassador for Cemtac Cements and has been covered by outlets across India and the MMA press for his rise from Kashmir to the international cage.</p>
+      <div class="press-row reveal d2">
+        <a class="press-pill" href="https://en.wikipedia.org/wiki/Owais_Yaqoob" target="_blank" rel="noopener">Wikipedia</a>
+        <a class="press-pill" href="https://journal.com.ph/owais-yaqoob-extends-streak-at-brave-cf-107-targets-lightweight-crown/" target="_blank" rel="noopener">Journal Online</a>
+        <a class="press-pill" href="https://www.bravecf.com" target="_blank" rel="noopener">BRAVE CF</a>
+        <a class="press-pill" href="https://www.sherdog.com/fighter/Owais-Yaqoob-421999" target="_blank" rel="noopener">Sherdog</a>
+        <a class="press-pill" href="https://www.tapology.com/fightcenter/fighters/372567-owais-yakoob" target="_blank" rel="noopener">Tapology</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta">
+    <div class="wrap reveal">
+      <h2>Don't miss the <span>rise</span></h2>
+      <p>Follow the journey from Pulwama's saffron fields to the world title. Every walkout, every finish &mdash; straight from the man himself.</p>
+      <div class="hero-ctas" style="justify-content:center;">
+        <a href="https://www.instagram.com/owais_yaqoob_/" target="_blank" rel="noopener" class="btn-primary">Follow on Instagram
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#record" class="btn-ghost">Full fight record</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="foot-name">Owais Yaqoob</div>
+        <p>Lightweight mixed martial artist. Fighting out of Kashmir, India, for Team Khabib and BRAVE Combat Federation.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#record">Fight record</a></li>
+          <li><a href="#instagram">Instagram</a></li>
+          <li><a href="#academy">Lion's Den Academy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/owais_yaqoob_/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Owais_Yaqoob" target="_blank" rel="noopener">Wikipedia</a></li>
+          <li><a href="https://www.bravecf.com" target="_blank" rel="noopener">BRAVE CF</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Owais Yaqoob. Fan-built tribute site.</span>
+      <span class="foot-meta">
+        <span>Pulwama, Kashmir → the world</span>
+      </span>
+      <span class="madeby">
+        <span class="madeby-logo">
+          <img src="https://aaqibjeelani.github.io/ajvirus/images/transparentlogo%20aj.png" alt="Aaqib Jeelani logo" loading="lazy">
+        </span>
+        Developed by <a href="https://aaqibjeelani.github.io" target="_blank" rel="noopener">Aaqib Jeelani</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- background audio control (hidden YouTube player) -->
+<button class="audio-control" id="audioControl" aria-label="Background music control" aria-pressed="false">
+  <span class="audio-icon">
+    <svg id="audioIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+  </span>
+  <span class="audio-label"><b>Background music</b>Tap to play</span>
+  <span class="audio-eq"><i></i><i></i><i></i><i></i></span>
+</button>
+
+<script>
+  // header shadow on scroll
+  const topbar = document.getElementById('topbar');
+  const toTop = document.getElementById('toTop');
+  function onScroll(){
+    const y = window.scrollY;
+    topbar.classList.toggle('scrolled', y > 20);
+    toTop.classList.toggle('show', y > 600);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  toTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+  // mobile nav
+  const burger = document.getElementById('navburger');
+  const navlinks = document.getElementById('navlinks');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    navlinks.classList.toggle('open');
+    document.body.style.overflow = navlinks.classList.contains('open') ? 'hidden' : '';
+  });
+  navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    burger.classList.remove('open');
+    navlinks.classList.remove('open');
+    document.body.style.overflow = '';
+  }));
+
+  // reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ---------- INSTAGRAM FEED ----------
+  // Add or remove post links here — newest first. Each entry renders as a
+  // live Instagram post via Instagram's official embed script.
+  const IG_POSTS = [
+    'https://www.instagram.com/p/DbgbX7ryNVm/',   // BRAVE CF 107 win celebration
+    'https://www.instagram.com/p/DYlr84hxCXl/',   // profile highlight
+    'https://www.instagram.com/p/DIsmLPbyUVr/',   // first BRAVE CF win, media coverage
+    'https://www.instagram.com/p/CwaX1X3tn9x/',   // journey to MMA
+    'https://www.instagram.com/reel/DbgJ-XHM54o/',
+    'https://www.instagram.com/reel/DOyoT9sig4s/',
+    'https://www.instagram.com/reel/DbgnJ9izHIs/'
+  ];
+
+  function loadInstagram(){
+    const grid = document.getElementById('ig-grid');
+    if (!grid) return;
+
+    IG_POSTS.forEach(url => {
+      const tile = document.createElement('div');
+      tile.className = 'ig-tile';
+      tile.innerHTML =
+        '<div class="ig-loading">Loading post…</div>' +
+        '<blockquote class="instagram-media" data-instgrm-permalink="' + url +
+        '" data-instgrm-version="14" style="background:transparent;border:0;min-width:100%;max-width:100%;"></blockquote>';
+      grid.appendChild(tile);
+      io.observe(tile);
+    });
+
+    // load Instagram's official embed.js once
+    if (window.instgrm){
+      window.instgrm.Embeds.process();
+      return;
+    }
+    const s = document.createElement('script');
+    s.src = '//www.instagram.com/embed.js';
+    s.async = true;
+    s.onload = function(){
+      if (window.instgrm) window.instgrm.Embeds.process();
+    };
+    document.head.appendChild(s);
+  }
+  loadInstagram();
+
+  // ---------- BACKGROUND AUDIO (hidden YouTube player) ----------
+  // Browsers block autoplay with sound, so the track starts muted and the
+  // control button lets visitors turn it on with one tap.
+  const audioBtn  = document.getElementById('audioControl');
+  const audioIcon = document.getElementById('audioIcon');
+  const AUDIO_VIDEO_ID = 'ZqHygmFOFFo';   // background audio track
+  let playerReady = false;
+  let playing = false;
+  let soundOn = false;
+  let attempted = false;
+
+  function setAudioState(){
+    const label = audioBtn.querySelector('.audio-label');
+    audioBtn.classList.toggle('playing', playing);
+    audioBtn.setAttribute('aria-pressed', playing ? 'true' : 'false');
+    if (label){
+      label.innerHTML = playing
+        ? (soundOn ? '<b>Background music</b>Playing' : '<b>Background music</b>Muted — tap for sound')
+        : '<b>Background music</b>Tap to play';
+    }
+    audioIcon.innerHTML = playing
+      ? '<path d="M11 5 6 9H2v6h4l5 4V5z"/>'
+      : '<path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/>';
+  }
+
+  function onYouTubeIframeAPIReady(){
+    window.ytPlayer = new YT.Player('yt-audio-player', {
+      videoId: AUDIO_VIDEO_ID,
+      playerVars: {
+        autoplay: 1,
+        controls: 0,
+        disablekb: 1,
+        fs: 0,
+        rel: 0,
+        showinfo: 0,
+        loop: 1,
+        playlist: AUDIO_VIDEO_ID,
+        playsinline: 1
+      },
+      events: {
+        onReady: function(e){
+          playerReady = true;
+          e.target.mute();
+          e.target.playVideo();
+          playing = true;
+          setAudioState();
+          attempted = true;
+        },
+        onStateChange: function(e){
+          if (e.data === YT.PlayerState.PLAYING) playing = true;
+          if (e.data === YT.PlayerState.PAUSED || e.data === YT.PlayerState.ENDED) playing = false;
+          setAudioState();
+        }
+      }
+    });
+  }
+
+  audioBtn.addEventListener('click', function(){
+    const p = window.ytPlayer;
+    if (!p || !playerReady) return;
+    if (!attempted){
+      // first tap: enable sound
+      p.unMute();
+      p.playVideo();
+      soundOn = true;
+      attempted = true;
+      setAudioState();
+      return;
+    }
+    if (soundOn){
+      // playing with sound -> mute
+      p.mute();
+      soundOn = false;
+    } else if (playing){
+      // playing muted -> unmute
+      p.unMute();
+      soundOn = true;
+    } else {
+      // paused -> play + unmute
+      p.unMute();
+      p.playVideo();
+      soundOn = true;
+    }
+    setAudioState();
+  });
+
+  // hidden player host (kept in DOM; invisible via fixed off-screen position)
+  const ytHost = document.createElement('div');
+  ytHost.setAttribute('aria-hidden', 'true');
+  ytHost.style.cssText = 'position:fixed;width:1px;height:1px;left:-9999px;top:0;overflow:hidden;';
+  ytHost.innerHTML = '<div id="yt-audio-player"></div>';
+  document.body.appendChild(ytHost);
+
+  // load YouTube IFrame Player API
+  if (window.YT && window.YT.Player){
+    onYouTubeIframeAPIReady();
+  } else {
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(tag);
+  }
+  window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
+</script>
+
+</body>
+</html>
