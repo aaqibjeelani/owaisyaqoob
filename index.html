@@ -1218,15 +1218,17 @@
   loadInstagram();
 
   // ---------- BACKGROUND AUDIO (hidden YouTube player) ----------
-  // Browsers block autoplay with sound, so the track starts muted and the
-  // control button lets visitors turn it on with one tap.
+  // Best-effort autoplay: browsers that allow it start the track with sound
+  // immediately. Where autoplay-with-sound is blocked, the track still starts
+  // (muted) and sound is enabled automatically on the visitor's first tap
+  // anywhere on the page — plus via the dedicated audio button.
   const audioBtn  = document.getElementById('audioControl');
   const audioIcon = document.getElementById('audioIcon');
   const AUDIO_VIDEO_ID = 'ZqHygmFOFFo';   // background audio track
   let playerReady = false;
   let playing = false;
   let soundOn = false;
-  let attempted = false;
+  let blocked = false;
 
   function setAudioState(){
     const label = audioBtn.querySelector('.audio-label');
@@ -1240,6 +1242,17 @@
     audioIcon.innerHTML = playing
       ? '<path d="M11 5 6 9H2v6h4l5 4V5z"/>'
       : '<path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/>';
+  }
+
+  function fallbackMute(){
+    const p = window.ytPlayer;
+    if (!p || !playerReady || blocked) return;
+    blocked = true;
+    p.mute();
+    soundOn = false;
+    p.playVideo();
+    playing = true;
+    setAudioState();
   }
 
   function onYouTubeIframeAPIReady(){
@@ -1259,11 +1272,21 @@
       events: {
         onReady: function(e){
           playerReady = true;
-          e.target.mute();
-          e.target.playVideo();
-          playing = true;
-          setAudioState();
-          attempted = true;
+          const p = e.target;
+          p.setVolume(70);
+          p.unMute();
+          soundOn = true;
+          // try autoplay WITH sound
+          try{
+            const r = p.playVideo();
+            if (r && typeof r.then === 'function'){
+              r.catch(fallbackMute);
+            }
+          }catch(err){ fallbackMute(); }
+          // if it never actually starts playing, treat as blocked -> muted autoplay
+          setTimeout(function(){
+            if (playerReady && !playing) fallbackMute();
+          }, 1500);
         },
         onStateChange: function(e){
           if (e.data === YT.PlayerState.PLAYING) playing = true;
@@ -1274,31 +1297,40 @@
     });
   }
 
+  // If autoplay-with-sound was blocked, enable sound automatically on the
+  // visitor's very first interaction anywhere on the page.
+  function enableSoundOnGesture(){
+    if (!blocked || !playerReady) return;
+    const p = window.ytPlayer;
+    p.unMute();
+    p.playVideo();
+    soundOn = true;
+    setAudioState();
+    document.removeEventListener('pointerdown', enableSoundOnGesture);
+    document.removeEventListener('keydown', enableSoundOnGesture);
+    document.removeEventListener('touchstart', enableSoundOnGesture);
+  }
+  document.addEventListener('pointerdown', enableSoundOnGesture);
+  document.addEventListener('keydown', enableSoundOnGesture);
+  document.addEventListener('touchstart', enableSoundOnGesture);
+
   audioBtn.addEventListener('click', function(){
     const p = window.ytPlayer;
     if (!p || !playerReady) return;
-    if (!attempted){
-      // first tap: enable sound
-      p.unMute();
-      p.playVideo();
-      soundOn = true;
-      attempted = true;
-      setAudioState();
-      return;
-    }
-    if (soundOn){
-      // playing with sound -> mute
-      p.mute();
-      soundOn = false;
-    } else if (playing){
-      // playing muted -> unmute
-      p.unMute();
-      soundOn = true;
-    } else {
+    if (!playing){
       // paused -> play + unmute
       p.unMute();
       p.playVideo();
       soundOn = true;
+    } else if (!soundOn){
+      // playing muted -> unmute
+      p.unMute();
+      soundOn = true;
+      blocked = false;
+    } else {
+      // playing with sound -> mute
+      p.mute();
+      soundOn = false;
     }
     setAudioState();
   });
